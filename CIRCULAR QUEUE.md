@@ -1,35 +1,44 @@
-# Exp No: 36  
-## Circular Queue 
+# Exp.No:39  
+## Circular Queue
+
 ---
 
 ### AIM  
-To write a Python program with a function to insert float values into a Circular Queue.
+To write a Python program to insert elements at REAR END of deque using a collection built-in function.
 
 ---
 
-### ALGORITHM
+### ALGORITHM  
 
-1. Start  
-2. Check if the Circular Queue is full  
-   - If `size == max_size`, print `"Queue is full"` and exit the function  
-3. If the queue is not full:  
-   - Read the element to be inserted  
-   - Convert it to float  
-   - Insert the element at the `tail` position  
-   - Update tail using: `tail = (tail + 1) % max_size` (circular increment)  
-   - Increment `size` by 1  
-4. End
+1. Import the `deque` class from the `collections` module.  
+2. Initialize an empty deque.  
+3. Start an infinite loop using `while True`.  
+4. In each iteration, take input from the user.  
+5. If the input is an empty string, break the loop.  
+6. If the input is not empty, convert it to an integer and append it to the deque.  
+7. After the loop ends, append the values `14` and `15` to the deque.  
+8. Print the message `"The deque after appending at right is :"`.  
+9. Print the contents of the deque.  
 
 ---
 
-### PROGRAM
+### PROGRAM  
 
 ```
-
+import collections
+a=int(input())
+b=int(input())
+c=int(input())
+d=collections.deque([a,b,c])
+d.append(14)
+d.append(15)
+print("The deque after appending at right is : ")
+print(d)
 
 ```
 
 ### OUTPUT
-
+![Screenshot (261)](https://github.com/user-attachments/assets/c7e96fbd-4afe-4dcd-b6af-53cedbcec71e)
 
 ### RESULT
+Thus the python program is initialised and executed successfully.
